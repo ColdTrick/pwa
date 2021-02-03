@@ -1,5 +1,5 @@
 {
-	"name": "coldtrick/pws",
+	"name": "coldtrick/pwa",
 	"description": "Progressive Web App implementation",
 	"type": "elgg-plugin",
 	"keywords": ["elgg", "plugin", "pwa"],
