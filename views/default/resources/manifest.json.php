@@ -14,13 +14,6 @@ $result['start_url'] = $site->getURL();
 $result['scope'] = $site->getURL();
 $result['description'] = $site->description;
 
-$result['shortcuts'] = [
-	[
-		'name' => elgg_echo('login'),
-		'url' => elgg_generate_url('account:login'),
-	],
-];
-
 // plugin settings
 $result['display'] = $plugin->display_mode;
 $result['background_color'] = strtoupper($plugin->background_color);
