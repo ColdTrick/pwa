@@ -27,14 +27,12 @@ if ($plugin->hasIcon('master', 'pwa')) {
 			continue;
 		}
 		
-		$icon = $plugin->getIcon($size, 'pwa');
-		
 		$result['icons'][] = [
 			'src' => $plugin->getIconURL([
 				'size' => $size,
 				'type' => 'pwa',
 			]),
-			'type' => $icon->getMimeType(),
+			'type' => 'image/png', // Chrome requires PNGs in order to be installable
 			'sizes' => "{$icon_settings['w']}x{$icon_settings['h']}"
 		];
 	}

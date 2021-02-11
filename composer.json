@@ -9,7 +9,8 @@
 		"issues": "https://github.com/ColdTrick/pwa/issues"
 	},
 	"require": {
-		"composer/installers": "^1.0.8"
+		"composer/installers": "^1.0.8",
+		"npm-asset/upup": "~1.1.0"
 	},
 	"require-dev": {
 		"coldtrick/sniffs": "dev-master",
@@ -17,5 +18,17 @@
 	},
 	"conflict": {
 		"elgg/elgg": "<3.3"
-	}
+	},
+	"config": {
+        "process-timeout": 0,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

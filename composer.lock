@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c65a00779bca858801291b84a6a152e4",
+    "content-hash": "72adc088b04bcc785fc75da5d3523fdb",
     "packages": [
         {
             "name": "composer/installers",
@@ -149,6 +149,18 @@
                 }
             ],
             "time": "2021-01-14T11:07:16+00:00"
+        },
+        {
+            "name": "npm-asset/upup",
+            "version": "1.1.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/upup/-/upup-1.1.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         }
     ],
     "packages-dev": [

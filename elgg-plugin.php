@@ -1,6 +1,14 @@
 <?php
 
+use ColdTrick\PWA\Bootstrap;
+
+$composer_path = '';
+if (is_dir(__DIR__ . '/vendor')) {
+	$composer_path = __DIR__ . '/';
+}
+
 return [
+	'bootstrap' => Bootstrap::class,
 	'settings' => [
 		'background_color' => '#fafafa',
 		'display_mode' => 'standalone',
@@ -16,6 +24,33 @@ return [
 			'object' => [
 				'\ColdTrick\PWA\Icons::getPWASizes' => [],
 			],
+		],
+		'head' => [
+			'page' => [
+				'\ColdTrick\PWA\Head::addMetaHeaders' => [],
+			],
+		],
+	],
+	'routes' => [
+		'offline.html' => [
+			'path' => '/offline.html',
+			'resource' => 'pwa/offline',
+			'walled' => false,
+		],
+		'service-worker' => [
+			'path' => '/service-worker',
+			'controller' => '\ColdTrick\PWA\Controllers\ServiceWorker',
+			'walled' => false,
+		],
+	],
+	'views' => [
+		'default' => [
+			'pwa/upup/' => $composer_path . 'vendor/npm-asset/upup/src/',
+		],
+	],
+	'view_extensions' => [
+		'pwa/upup/upup.js' => [
+			'pwa/upup.config.js' => [],
 		],
 	],
 ];
