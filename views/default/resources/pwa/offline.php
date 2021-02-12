@@ -13,7 +13,5 @@ if ($plugin->hasIcon('pwa_192', 'pwa')) {
 
 $content .= elgg_echo('pwa:offline:content');
 
-echo elgg_view_page(elgg_echo('pwa:offline:title'), [
-	'content' => $content,
-	'title' => false,
-], 'offline');
+// pass content as a string, so it will not use the default layout
+echo elgg_view_page(elgg_echo('pwa:offline:title'), $content, 'offline');

@@ -12,7 +12,8 @@ foreach ($core_css as $css) {
 
 ?>
 .elgg-page-offline {
-	margin: 5% auto 0;
+	margin: 0 auto;
+	padding: 5% 0;
 	max-width: 20rem;
 	text-align: center;
 	
