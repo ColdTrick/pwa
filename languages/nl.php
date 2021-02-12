@@ -1,10 +1,13 @@
 <?php
 /**
- * This file was created by Translation Editor v8.0
- * On 2021-02-09 13:43
+ * This file was created by Translation Editor v7.0.4
+ * On 2021-02-12 11:32
  */
 
 return array (
+  'pwa:offline:title' => 'Je bent offline',
+  'pwa:offline:content' => 'Het lijkt er op dat je offline bent. Als je de app wilt gebruiken, zorg dan dat je weer verbinding hebt.',
+  'pwa:offline:reload' => 'Opnieuw proberen',
   'pwa:settings:display_mode' => 'Weergave modus',
   'pwa:settings:display_mode:help' => 'Welk User Interface (UI) moet er worden gebruikt voor de webapp',
   'pwa:settings:display_mode:fullscreen' => 'Volledig scherm',
