@@ -12,7 +12,13 @@ return [
 	'pwa:settings:theme_color' => "Theme color",
 	'pwa:settings:theme_color:help' => "Set the color of the tool bar",
 	'pwa:settings:icons' => "Webapp icon used on the splash screen",
+	'pwa:settings:installable' => "Show installable popup",
+	'pwa:settings:installable:help' => "How should a installable notice show for a user browsing the site",
+	'pwa:settings:installable:default' => "Default browser notification",
+	'pwa:settings:installable:custom' => "Custom notification",
+	'pwa:settings:installable:disabled' => "No notification",
 	'pwa:offline:title' => "You are offline",
 	'pwa:offline:content' => "It looks like you are offline. When you are online again, you can reload the page to use the app.",
 	'pwa:offline:reload' => "Click here to try again",
+	'pwa:install' => "Install This Site",
 ];

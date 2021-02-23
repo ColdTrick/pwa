@@ -13,6 +13,7 @@ return [
 		'background_color' => '#fafafa',
 		'display_mode' => 'standalone',
 		'theme_color' => '#0078ac',
+		'installable' => 'default',
 	],
 	'hooks' => [
 		'action:validate' => [
@@ -28,6 +29,11 @@ return [
 		'head' => [
 			'page' => [
 				'\ColdTrick\PWA\Head::addMetaHeaders' => [],
+			],
+		],
+		'register' => [
+			'menu:footer' => [
+				'\ColdTrick\PWA\Menus::registerFooterInstall' => [],
 			],
 		],
 	],

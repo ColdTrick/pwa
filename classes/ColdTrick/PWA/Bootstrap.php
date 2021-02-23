@@ -14,5 +14,10 @@ class Bootstrap extends DefaultPluginBootstrap {
 		elgg_load_external_file('js', 'upup');
 		
 		elgg_register_simplecache_view('page/elements/offline.css');
+		
+		elgg_define_js('pwa/installable', [
+			'src' => elgg_get_simplecache_url('pwa/installable.js'),
+		]);
+		elgg_require_js('pwa/installable');
 	}
 }

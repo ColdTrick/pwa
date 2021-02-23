@@ -8,8 +8,8 @@ $plugin = elgg_get_plugin_from_id('pwa');
 $result = [];
 
 // basic site information
-$result['name'] = $site->getDisplayName();
-$result['short_name'] = elgg_get_excerpt($site->getDisplayName(), 50);
+$result['name'] = html_entity_decode($site->getDisplayName());
+$result['short_name'] = elgg_get_excerpt($result['name'], 50);
 $result['start_url'] = $site->getURL();
 $result['scope'] = $site->getURL();
 $result['description'] = $site->description;

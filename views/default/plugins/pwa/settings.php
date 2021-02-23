@@ -54,3 +54,16 @@ echo elgg_view_field([
 		],
 	],
 ]);
+
+echo elgg_view_field([
+	'#type' => 'select',
+	'#label' => elgg_echo('pwa:settings:installable'),
+	'#help' => elgg_echo('pwa:settings:installable:help'),
+	'name' => 'params[installable]',
+	'options_values' => [
+		'default' => elgg_echo('pwa:settings:installable:default'),
+		'custom' => elgg_echo('pwa:settings:installable:custom'),
+		'disabled' => elgg_echo('pwa:settings:installable:disabled'),
+	],
+	'value' => $plugin->installable,
+]);
