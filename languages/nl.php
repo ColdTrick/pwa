@@ -1,10 +1,16 @@
 <?php
 /**
  * This file was created by Translation Editor v7.0.4
- * On 2021-02-12 11:32
+ * On 2021-02-23 16:24
  */
 
 return array (
+  'pwa:settings:installable' => 'Toon installatie melding',
+  'pwa:settings:installable:help' => 'Hoe moet een installatie melding aan de gebruiker getoond worden wanneer men de site bekijkt',
+  'pwa:settings:installable:default' => 'Standaard browser melding',
+  'pwa:settings:installable:custom' => 'Maatwerk melding',
+  'pwa:settings:installable:disabled' => 'Geen melding',
+  'pwa:install' => 'Installeer deze site',
   'pwa:offline:title' => 'Je bent offline',
   'pwa:offline:content' => 'Het lijkt er op dat je offline bent. Als je de app wilt gebruiken, zorg dan dat je weer verbinding hebt.',
   'pwa:offline:reload' => 'Opnieuw proberen',
