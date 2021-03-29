@@ -3,7 +3,7 @@
 	<name>Progressive Web App</name>
 	<id>pwa</id>
 	<author>ColdTrick IT Solutions</author>
-	<version>0.1</version>
+	<version>1.0</version>
 	<description>Provides Progressive Web App features</description>
 	<website>http://www.coldtrick.com/</website>
 	<repository>https://github.com/ColdTrick/pwa</repository>
