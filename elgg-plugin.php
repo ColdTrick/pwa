@@ -14,6 +14,7 @@ return [
 		'display_mode' => 'standalone',
 		'theme_color' => '#0078ac',
 		'installable' => 'default',
+		'use_cached_service_worker' => false,
 	],
 	'hooks' => [
 		'action:validate' => [
@@ -40,7 +41,7 @@ return [
 	'routes' => [
 		'offline.html' => [
 			'path' => '/offline.html',
-			'resource' => 'pwa/offline',
+			'resource' => 'pwa/offline.html',
 			'walled' => false,
 		],
 		'service-worker' => [

@@ -17,6 +17,8 @@ return [
 	'pwa:settings:installable:default' => "Default browser notification",
 	'pwa:settings:installable:custom' => "Custom notification",
 	'pwa:settings:installable:disabled' => "No notification",
+	'pwa:settings:use_cached_service_worker' => "Use cacheable service worker",
+	'pwa:settings:use_cached_service_worker:help' => "If you want to use a cacheable service worker you will need to modify your htaccess. See the readme for instructions.",
 	'pwa:offline:title' => "You are offline",
 	'pwa:offline:content' => "It looks like you are offline. When you are online again, you can reload the page to use the app.",
 	'pwa:offline:reload' => "Click here to try again",

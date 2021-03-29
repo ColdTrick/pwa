@@ -67,3 +67,14 @@ echo elgg_view_field([
 	],
 	'value' => $plugin->installable,
 ]);
+
+echo elgg_view_field([
+	'#type' => 'checkbox',
+	'#label' => elgg_echo('pwa:settings:use_cached_service_worker'),
+	'#help' => elgg_echo('pwa:settings:use_cached_service_worker:help'),
+	'name' => 'params[use_cached_service_worker]',
+	'checked' => (bool) $plugin->use_cached_service_worker,
+	'switch' => true,
+	'default' => 0,
+	'value' => 1,
+]);
