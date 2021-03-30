@@ -1,6 +1,10 @@
 Version history
 ===============
 
+1.1 (2021-03-30):
+
+- changed: improved caching of offline and service worker urls
+
 1.0 (2021-03-16):
 
 - added: basic manifest settings
