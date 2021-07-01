@@ -1,8 +1,9 @@
 {
 	"name": "coldtrick/pwa",
 	"description": "Progressive Web App implementation",
+	"homepage": "https://www.coldtrick.com",
 	"type": "elgg-plugin",
-	"keywords": ["elgg", "plugin", "pwa"],
+	"keywords": ["elgg", "plugin", "theme", "pwa"],
 	"license": "GPL-2.0-only",
 	"support": {
 		"source": "https://github.com/ColdTrick/pwa",
@@ -17,7 +18,7 @@
 		"coldtrick/releases": "dev-master"
 	},
 	"conflict": {
-		"elgg/elgg": "<3.3"
+		"elgg/elgg": "<4.0"
 	},
 	"config": {
         "process-timeout": 0,

@@ -8,6 +8,9 @@ if (is_dir(__DIR__ . '/vendor')) {
 }
 
 return [
+	'plugin' => [
+		'version' => '1.1',
+	],
 	'bootstrap' => Bootstrap::class,
 	'settings' => [
 		'background_color' => '#fafafa',
