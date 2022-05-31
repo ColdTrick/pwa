@@ -1,10 +1,12 @@
 <?php
 /**
- * This file was created by Translation Editor v7.0.4
- * On 2021-02-23 16:24
+ * This file was created by Translation Editor v9.0.2
+ * On 2022-05-31 12:02
  */
 
 return array (
+  'pwa:settings:use_cached_service_worker' => 'Gebruik een gecachede service worker',
+  'pwa:settings:use_cached_service_worker:help' => 'Als je gebruik wilt maken van een gecachede service worken moet je een aanpassing maken in je .htaccess. Zie de readme voor instructies.',
   'pwa:settings:installable' => 'Toon installatie melding',
   'pwa:settings:installable:help' => 'Hoe moet een installatie melding aan de gebruiker getoond worden wanneer men de site bekijkt',
   'pwa:settings:installable:default' => 'Standaard browser melding',
