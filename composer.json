@@ -18,13 +18,16 @@
 		"coldtrick/releases": "dev-master"
 	},
 	"conflict": {
-		"elgg/elgg": "<4.0"
+		"elgg/elgg": "<4.3"
 	},
 	"config": {
         "process-timeout": 0,
         "fxp-asset": {
             "enabled": false
-        }
+        },
+		"allow-plugins": {
+			"composer/installers": true
+		}
     },
     "repositories": [
         {
