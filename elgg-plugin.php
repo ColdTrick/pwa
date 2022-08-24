@@ -9,7 +9,7 @@ if (is_dir(__DIR__ . '/vendor')) {
 
 return [
 	'plugin' => [
-		'version' => '2.0.1',
+		'version' => '3.0',
 		'name' => 'Progressive Web App',
 	],
 	'bootstrap' => Bootstrap::class,
