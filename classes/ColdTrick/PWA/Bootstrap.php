@@ -4,6 +4,9 @@ namespace ColdTrick\PWA;
 
 use Elgg\DefaultPluginBootstrap;
 
+/**
+ * Plugin bootstrap
+ */
 class Bootstrap extends DefaultPluginBootstrap {
 	
 	/**

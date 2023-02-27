@@ -2,17 +2,20 @@
 
 namespace ColdTrick\PWA;
 
+/**
+ * Page head callbacks
+ */
 class Head {
 	
 	/**
 	 * Add meta headers
 	 *
-	 * @param \Elgg\Hook $hook 'head', 'page'
+	 * @param \Elgg\Event $event 'head', 'page'
 	 *
 	 * @return array
 	 */
-	public static function addMetaHeaders(\Elgg\Hook $hook) {
-		$result = $hook->getValue();
+	public static function addMetaHeaders(\Elgg\Event $event) {
+		$result = $event->getValue();
 		
 		$result['metas']['theme-color'] = [
 			'name' => 'theme-color',

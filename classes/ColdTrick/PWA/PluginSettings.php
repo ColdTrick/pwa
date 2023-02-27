@@ -2,18 +2,21 @@
 
 namespace ColdTrick\PWA;
 
+/**
+ * Plugin settings callbacks
+ */
 class PluginSettings {
 	
 	/**
 	 * Listen to the action validation for plugin settings save to update the PWA icons
 	 *
-	 * @param \Elgg\Hook $hook 'action:validate', 'plugin/settings/save'
+	 * @param \Elgg\Event $event 'action:validate', 'plugin/settings/save'
 	 *
 	 * @return void
 	 */
-	public static function actionValidation(\Elgg\Hook $hook) {
+	public static function actionValidation(\Elgg\Event $event) {
 		/* @var $request \Elgg\Request */
-		$request = $hook->getParam('request');
+		$request = $event->getParam('request');
 		
 		if ($request->getParam('plugin_id') !== 'pwa') {
 			return;

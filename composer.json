@@ -14,7 +14,6 @@
 		"npm-asset/upup": "~1.1.0"
 	},
 	"require-dev": {
-		"coldtrick/sniffs": "dev-master",
 		"coldtrick/releases": "dev-master"
 	},
 	"conflict": {

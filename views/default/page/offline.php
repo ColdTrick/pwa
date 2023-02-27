@@ -12,31 +12,30 @@ $content = elgg_extract('body', $vars);
 $header = elgg_view('page/elements/offline/header', $vars);
 $footer = elgg_view('page/elements/offline/footer', $vars);
 
-$body = <<<__BODY
-<div class="elgg-page elgg-page-offline">
-	<div class="elgg-inner">
-		<div class="elgg-page-header">
-			<div class="elgg-inner">
-				$header
+$body = "
+<div class='elgg-page elgg-page-offline'>
+	<div class='elgg-inner'>
+		<div class='elgg-page-header'>
+			<div class='elgg-inner'>
+				{$header}
 			</div>
 		</div>
-		<div class="elgg-page-body">
-			<div class="elgg-inner">
-				$content
+		<div class='elgg-page-body'>
+			<div class='elgg-inner'>
+				{$content}
 			</div>
 		</div>
-		<div class="elgg-page-footer">
-			<div class="elgg-inner">
-				$footer
+		<div class='elgg-page-footer'>
+			<div class='elgg-inner'>
+				{$footer}
 			</div>
 		</div>
 	</div>
-</div>
-__BODY;
+</div>";
 
 
-// constructing html here to prevent hook/view extensions
-elgg_set_http_header("Content-type: text/html; charset=UTF-8");
+// constructing html here to prevent extensions
+elgg_set_http_header('Content-type: text/html; charset=UTF-8');
 
 $lang = elgg_get_current_language();
 

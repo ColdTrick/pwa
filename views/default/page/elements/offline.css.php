@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $core_css = [
 	'elements/reset.css',
@@ -26,7 +26,7 @@ foreach ($core_css as $css) {
 	}
 	
 	.pwa-offline {
-		margin: 1rem auto;	
+		margin: 1rem auto;
 		border-radius: 500px;
 		border: solid 10px $(border-color-mild);
 		width: 100px;

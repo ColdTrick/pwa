@@ -20,7 +20,7 @@ return [
 		'installable' => 'default',
 		'use_cached_service_worker' => false,
 	],
-	'hooks' => [
+	'events' => [
 		'action:validate' => [
 			'plugins/settings/save' => [
 				'\ColdTrick\PWA\PluginSettings::actionValidation' => [],

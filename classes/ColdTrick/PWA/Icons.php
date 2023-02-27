@@ -2,22 +2,25 @@
 
 namespace ColdTrick\PWA;
 
+/**
+ * Icons
+ */
 class Icons {
 	
 	/**
 	 * Set the correct icon sizes for the pwa
 	 *
-	 * @param \Elgg\Hook $hook 'entity:pwa:sizes', 'object'
+	 * @param \Elgg\Event $event 'entity:pwa:sizes', 'object'
 	 *
 	 * @return void|array
 	 */
-	public static function getPWASizes(\Elgg\Hook $hook) {
+	public static function getPWASizes(\Elgg\Event $event) {
 		
-		if ($hook->getParam('entity_subtype') !== 'plugin') {
+		if ($event->getParam('entity_subtype') !== 'plugin') {
 			return;
 		}
 		
-		$result = $hook->getValue();
+		$result = $event->getValue();
 		
 		$result['pwa_192'] = [
 			'w' => 192,

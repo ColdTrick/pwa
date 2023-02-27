@@ -14,11 +14,10 @@ define(['jquery'], function($) {
 		// Prevent the mini-infobar from appearing on mobile
 		e.preventDefault();
 		
-		
-		<?php if ($plugin->installable === 'custom') { ?>
-		// Update UI notify the user they can install the PWA
-		showPWAInstallPromotion();
-		<?php } ?>
+			<?php if ($plugin->installable === 'custom') { ?>
+			// Update UI notify the user they can install the PWA
+			showPWAInstallPromotion();
+			<?php } ?>
 		<?php } ?>
 	});
 	
