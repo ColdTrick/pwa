@@ -12,7 +12,7 @@ $result['name'] = html_entity_decode($site->getDisplayName());
 $result['short_name'] = elgg_get_excerpt($result['name'], 50);
 $result['start_url'] = $site->getURL();
 $result['scope'] = $site->getURL();
-$result['description'] = $site->description;
+$result['description'] = (string) $site->description;
 
 // plugin settings
 $result['display'] = $plugin->display_mode;

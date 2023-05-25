@@ -56,7 +56,7 @@ return [
 	],
 	'views' => [
 		'default' => [
-			'pwa/upup/' => $composer_path . 'vendor/npm-asset/upup/src/',
+			'pwa/upup/upup.js' => $composer_path . 'vendor/npm-asset/upup/src/upup.js',
 		],
 	],
 	'view_extensions' => [
