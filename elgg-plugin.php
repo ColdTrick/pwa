@@ -20,6 +20,18 @@ return [
 		'installable' => 'default',
 		'use_cached_service_worker' => false,
 	],
+	'routes' => [
+		'offline.html' => [
+			'path' => '/offline.html',
+			'resource' => 'pwa/offline.html',
+			'walled' => false,
+		],
+		'service-worker' => [
+			'path' => '/service-worker',
+			'controller' => '\ColdTrick\PWA\Controllers\ServiceWorker',
+			'walled' => false,
+		],
+	],
 	'events' => [
 		'action:validate' => [
 			'plugins/settings/save' => [
@@ -38,20 +50,8 @@ return [
 		],
 		'register' => [
 			'menu:footer' => [
-				'\ColdTrick\PWA\Menus::registerFooterInstall' => [],
+				'\ColdTrick\PWA\Menus\Footer::registerInstall' => [],
 			],
-		],
-	],
-	'routes' => [
-		'offline.html' => [
-			'path' => '/offline.html',
-			'resource' => 'pwa/offline.html',
-			'walled' => false,
-		],
-		'service-worker' => [
-			'path' => '/service-worker',
-			'controller' => '\ColdTrick\PWA\Controllers\ServiceWorker',
-			'walled' => false,
 		],
 	],
 	'views' => [

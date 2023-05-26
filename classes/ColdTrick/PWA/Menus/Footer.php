@@ -1,20 +1,23 @@
 <?php
 
-namespace ColdTrick\PWA;
+namespace ColdTrick\PWA\Menus;
+
+use Elgg\Menu\MenuItems;
 
 /**
- * Menus
+ * Add menu items to the footer menu
  */
-class Menus {
+class Footer {
 
 	/**
 	 * Add footer menu items
 	 *
 	 * @param \Elgg\Event $event 'register', 'menu:footer'
 	 *
-	 * @return array
+	 * @return MenuItems
 	 */
-	public static function registerFooterInstall(\Elgg\Event $event) {
+	public static function registerInstall(\Elgg\Event $event): MenuItems {
+		/* @var $returnvalue MenuItems */
 		$returnvalue = $event->getValue();
 		
 		$returnvalue[] = \ElggMenuItem::factory([
