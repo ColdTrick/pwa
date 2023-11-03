@@ -10,7 +10,6 @@
 		"issues": "https://github.com/ColdTrick/pwa/issues"
 	},
 	"require": {
-		"composer/installers": "^1.0.8",
 		"npm-asset/upup": "~1.1.0"
 	},
 	"conflict": {
@@ -20,10 +19,7 @@
         "process-timeout": 0,
         "fxp-asset": {
             "enabled": false
-        },
-		"allow-plugins": {
-			"composer/installers": true
-		}
+        }
     },
     "repositories": [
         {
