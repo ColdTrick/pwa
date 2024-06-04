@@ -64,4 +64,10 @@ return [
 			'pwa/upup.config.js' => [],
 		],
 	],
+	'view_options' => [
+		'page/elements/offline.css' => ['simplecache' => true],
+		'pwa/installable.mjs' => ['simplecache' => true],
+		'pwa/upup/upup.sw.js' => ['simplecache' => true],
+		'resources/pwa/offline.html' => ['simplecache' => true],
+	],
 ];

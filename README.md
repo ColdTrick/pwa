@@ -1,6 +1,6 @@
 # Progressive Web App
 
-![Elgg 5.0](https://img.shields.io/badge/Elgg-5.0-green.svg)
+![Elgg 6.0](https://img.shields.io/badge/Elgg-6.0-green.svg)
 ![Lint Checks](https://github.com/ColdTrick/pwa/actions/workflows/lint.yml/badge.svg?event=push)
 [![Latest Stable Version](https://poser.pugx.org/coldtrick/pwa/v/stable.svg)](https://packagist.org/packages/coldtrick/pwa)
 [![License](https://poser.pugx.org/coldtrick/pwa/license.svg)](https://packagist.org/packages/coldtrick/pwa)

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84bfbca411ffece9a393de930a77cb65",
+    "content-hash": "832313651417aa491d473097706326b3",
     "packages": [
         {
             "name": "npm-asset/upup",

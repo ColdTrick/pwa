@@ -13,7 +13,7 @@
 		"npm-asset/upup": "~1.1.0"
 	},
 	"conflict": {
-		"elgg/elgg": "<5.0"
+		"elgg/elgg": "<6.0"
 	},
 	"config": {
         "process-timeout": 0,
