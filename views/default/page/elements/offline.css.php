@@ -1,6 +1,7 @@
 <?php
 
 $core_css = [
+	'elements/variables.css',
 	'elements/reset.css',
 	'elements/typography.css',
 	'elements/buttons.css',
@@ -15,10 +16,12 @@ foreach ($core_css as $css) {
 	margin: 0 auto;
 	padding: 5% 0;
 	max-width: 20rem;
+	min-height: 100vh;
 	text-align: center;
 	
+	
 	.elgg-page-header {
-		border-bottom: 1px solid $(border-color-soft);
+		border-bottom: 1px solid var(--elgg-border-color-soft);
 	}
 	
 	.elgg-page-body {
@@ -28,7 +31,7 @@ foreach ($core_css as $css) {
 	.pwa-offline {
 		margin: 1rem auto;
 		border-radius: 500px;
-		border: solid 10px $(border-color-mild);
+		border: solid 10px var(--elgg-border-color-mild);
 		width: 100px;
 		height: 100px;
 		background-size: cover;
@@ -41,7 +44,7 @@ foreach ($core_css as $css) {
 			left: -1px;
 			width: 85px;
 			height: 10px;
-			background-color: $(border-color-mild);
+			background-color: var(--elgg-border-color-mild);
 			transform: rotate(45deg);
 		}
 	}
