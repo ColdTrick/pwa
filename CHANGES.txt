@@ -1,6 +1,10 @@
 Version history
 ===============
 
+5.0.3 (2025-12-19):
+
+- fixed: make sure to import CSS variables
+
 5.0.2 (2025-11-13):
 
 - several small chores/fixes
