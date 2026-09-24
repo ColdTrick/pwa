@@ -1,6 +1,6 @@
 <?php
 
-/* @var $plugin \ElggPlugin */
+/** @var \ElggPlugin $plugin */
 $plugin = elgg_extract('entity', $vars);
 
 // force cache reset on save (for simplecaches manifest.json)

@@ -15,7 +15,7 @@ class PluginSettings {
 	 * @return void
 	 */
 	public static function actionValidation(\Elgg\Event $event) {
-		/* @var $request \Elgg\Request */
+		/** @var \Elgg\Request $request */
 		$request = $event->getParam('request');
 		
 		if ($request->getParam('plugin_id') !== 'pwa') {
